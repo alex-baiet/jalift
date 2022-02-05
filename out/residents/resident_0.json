@@ -1,0 +1,17 @@
+[ {
+  "act" : "PRESENTATION",
+  "floor" : 4,
+  "instant" : 5.418999999999935
+}, {
+  "act" : "EMBARK",
+  "floor" : 4,
+  "instant" : 101.97199999998358
+}, {
+  "act" : "UNLOAD",
+  "floor" : 0,
+  "instant" : 110.67599999997779
+}, {
+  "act" : "PRESENTATION",
+  "floor" : 0,
+  "instant" : 110.6859999999778
+} ]

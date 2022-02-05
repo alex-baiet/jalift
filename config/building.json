@@ -1,0 +1,68 @@
+/*
+JSON représentant un immeuble dans le simulateur.
+Ce JSON contient toutes les informations nécessaires pour faire tourner le simulateur.
+*/
+{
+  // Nombre d'étage de l'immeuble
+  "floorCount" : 10,
+  // Hauteur des étages en mètres
+  "floorHeight" : 4.0,
+  // Nombre de résidents dans l'immeuble
+  "residentCount" : 50,
+  // Tous les ascenseurs de l'immeuble
+  "elevators" : [
+    {
+      // Poids maximum que peut contenir l'ascenseur
+      "maxContentWeight" : 200.0,
+      // Accélération de l'ascenseur en m²/s
+      "acceleration" : 10.0,
+      // Vitesse maximal de l'ascenseur en m/s
+      "maxSpeed" : 4.0,
+      // Temps d'arrêt de l'ascenseur pour récupérer les résidents en seconde
+      "stopDuration" : 1.0,
+      /*
+      Intelligence de l'ascenseur. Les choix :
+      - "metro" : S'arrête à tous les étages en faisant des aller-retours continuellement
+      - "bus" : Comme "metro", mais ne s'arrête que là où il y a de la demande
+      - "basic" : Intelligence classique d'ascenseur qui est le plus utilisée
+      - "insideFirst" : La demande venant des personnes à l'intérieur de l'ascenseur est prioritaire sur les autres demandes.
+      */
+      "ai" : "basic",
+      // Poids de l'ascenseur vide
+      "weight" : 300.0,
+      // Coût en énergie de l'ascenseur en J/Kg/m
+      "energyCost" : 10,
+      // Taux de récupération de l'énergie lors des déscentes de l'ascenseur
+      "alphaEnergyRecovery" : 0.5,
+      // Position de base de l'ascenseur
+      "floorPosition" : 0
+    },
+    {
+      "maxContentWeight" : 200.0,
+      "acceleration" : 10.0,
+      "maxSpeed" : 4.0,
+      "stopDuration" : 1.0,
+      "ai" : "insideFirst",
+      "weight" : 300.0,
+      "energyCost" : 10,
+      "alphaEnergyRecovery" : 0.5,
+      "floorPosition" : 2
+    }
+  ],
+  // Liste des périodes de sortie des résidents
+  "exitRanges" : [
+    {
+      // Date de début de la période, en seconde
+      "start" : 5.0,
+      // Date de fin de la période, en seconde
+      "end" : 10.0
+    }
+  ],
+  // Liste des périodes de rentrée des résidents vers leur domicile
+  "enterRanges" : [
+    {
+      "start" : 15.0,
+      "end" : 20.0
+    }
+  ]
+}

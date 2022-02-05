@@ -1,0 +1,1016 @@
+[ {
+  "act" : "DEPART",
+  "instant" : 0.35,
+  "floor" : 0,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 1.749999999999985,
+  "floor" : 1,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 2.7569999999999815,
+  "floor" : 1,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 4.156999999999935,
+  "floor" : 2,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 5.173999999999944,
+  "floor" : 2,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 6.575999999999884,
+  "floor" : 3,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 7.577999999999874,
+  "floor" : 3,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 8.978000000000028,
+  "floor" : 4,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 9.987000000000068,
+  "floor" : 4,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 11.388000000000295,
+  "floor" : 3,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 12.388000000000316,
+  "floor" : 3,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 13.79200000000025,
+  "floor" : 2,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 14.800000000000189,
+  "floor" : 2,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 16.220000000000102,
+  "floor" : 1,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 17.22800000000006,
+  "floor" : 1,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 18.62800000000002,
+  "floor" : 0,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 19.700000000000006,
+  "floor" : 0,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 21.139999999999976,
+  "floor" : 1,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 22.163999999999948,
+  "floor" : 1,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 23.571999999999914,
+  "floor" : 2,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 24.57999999999988,
+  "floor" : 2,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 25.987999999999847,
+  "floor" : 3,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 26.99599999999977,
+  "floor" : 3,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 28.395999999999745,
+  "floor" : 4,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 29.399999999999764,
+  "floor" : 4,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 30.79999999999976,
+  "floor" : 3,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 31.799999999999777,
+  "floor" : 3,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 33.201999999999884,
+  "floor" : 2,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 34.20199999999989,
+  "floor" : 2,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 35.60399999999994,
+  "floor" : 1,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 36.605999999999916,
+  "floor" : 1,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 38.006000000000014,
+  "floor" : 0,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 39.02799999999997,
+  "floor" : 0,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 40.430000000000234,
+  "floor" : 1,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 41.46200000000024,
+  "floor" : 1,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 42.864000000000615,
+  "floor" : 2,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 43.882000000000595,
+  "floor" : 2,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 45.28200000000101,
+  "floor" : 3,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 46.290000000001015,
+  "floor" : 3,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 47.69000000000139,
+  "floor" : 4,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 48.71600000000132,
+  "floor" : 4,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 50.116000000001826,
+  "floor" : 3,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 51.15000000000175,
+  "floor" : 3,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 52.552000000002415,
+  "floor" : 2,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 53.58400000000233,
+  "floor" : 2,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 54.98600000000297,
+  "floor" : 1,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 55.99800000000289,
+  "floor" : 1,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 57.442000000003674,
+  "floor" : 0,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 58.4520000000036,
+  "floor" : 0,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 59.852000000004246,
+  "floor" : 1,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 60.85400000000418,
+  "floor" : 1,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 62.254000000004915,
+  "floor" : 2,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 63.256000000004846,
+  "floor" : 2,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 64.6560000000043,
+  "floor" : 3,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 65.6880000000043,
+  "floor" : 3,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 67.10600000000262,
+  "floor" : 4,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 68.12000000000262,
+  "floor" : 4,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 69.52200000000114,
+  "floor" : 3,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 70.55000000000112,
+  "floor" : 3,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 71.94999999999989,
+  "floor" : 2,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 72.95399999999994,
+  "floor" : 2,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 74.35399999999905,
+  "floor" : 1,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 75.36199999999904,
+  "floor" : 1,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 76.78399999999745,
+  "floor" : 0,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 77.79799999999746,
+  "floor" : 0,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 79.19799999999631,
+  "floor" : 1,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 80.2079999999963,
+  "floor" : 1,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 81.60799999999483,
+  "floor" : 2,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 82.6379999999948,
+  "floor" : 2,
+  "nbResident" : 1
+}, {
+  "act" : "ARRIVE",
+  "instant" : 84.0399999999935,
+  "floor" : 3,
+  "nbResident" : 1
+}, {
+  "act" : "DEPART",
+  "instant" : 85.04199999999351,
+  "floor" : 3,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 86.44199999999219,
+  "floor" : 4,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 87.45399999999222,
+  "floor" : 4,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 88.85399999999062,
+  "floor" : 3,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 89.86999999999067,
+  "floor" : 3,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 91.26999999998922,
+  "floor" : 2,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 92.28999999998929,
+  "floor" : 2,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 93.69199999998777,
+  "floor" : 1,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 94.7239999999878,
+  "floor" : 1,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 96.12399999998641,
+  "floor" : 0,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 97.12999999998645,
+  "floor" : 0,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 98.53199999998499,
+  "floor" : 1,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 99.539999999985,
+  "floor" : 1,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 100.93999999998358,
+  "floor" : 2,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 101.97199999998358,
+  "floor" : 2,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 103.40599999998216,
+  "floor" : 3,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 104.4239999999822,
+  "floor" : 3,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 105.82399999998078,
+  "floor" : 4,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 106.85399999998077,
+  "floor" : 4,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 108.2559999999793,
+  "floor" : 3,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 109.27599999997929,
+  "floor" : 3,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 110.67599999997779,
+  "floor" : 2,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 111.68199999997783,
+  "floor" : 2,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 113.08199999997649,
+  "floor" : 1,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 114.1079999999765,
+  "floor" : 1,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 115.50999999997512,
+  "floor" : 0,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 116.54199999997512,
+  "floor" : 0,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 117.94199999997345,
+  "floor" : 1,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 118.94399999997346,
+  "floor" : 1,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 120.34399999997201,
+  "floor" : 2,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 121.37599999997198,
+  "floor" : 2,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 122.77599999997086,
+  "floor" : 3,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 123.77999999997085,
+  "floor" : 3,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 125.17999999997006,
+  "floor" : 4,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 126.19599999997003,
+  "floor" : 4,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 127.59599999996861,
+  "floor" : 3,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 128.60999999996866,
+  "floor" : 3,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 130.0099999999701,
+  "floor" : 2,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 131.03199999997025,
+  "floor" : 2,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 132.4319999999693,
+  "floor" : 1,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 133.45199999996947,
+  "floor" : 1,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 134.85199999997204,
+  "floor" : 0,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 135.85399999997216,
+  "floor" : 0,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 137.25399999997538,
+  "floor" : 1,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 138.26199999997556,
+  "floor" : 1,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 139.66199999997812,
+  "floor" : 2,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 140.68999999997828,
+  "floor" : 2,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 142.0899999999808,
+  "floor" : 3,
+  "nbResident" : 2
+}, {
+  "act" : "DEPART",
+  "instant" : 143.11599999998091,
+  "floor" : 3,
+  "nbResident" : 2
+}, {
+  "act" : "ARRIVE",
+  "instant" : 144.5159999999836,
+  "floor" : 4,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 145.51799999998374,
+  "floor" : 4,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 146.91799999998523,
+  "floor" : 3,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 147.9459999999854,
+  "floor" : 3,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 149.345999999987,
+  "floor" : 2,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 150.35399999998717,
+  "floor" : 2,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 151.75399999999,
+  "floor" : 1,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 152.76599999999013,
+  "floor" : 1,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 154.1659999999921,
+  "floor" : 0,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 155.1839999999921,
+  "floor" : 0,
+  "nbResident" : 1
+}, {
+  "act" : "ARRIVE",
+  "instant" : 156.585999999994,
+  "floor" : 1,
+  "nbResident" : 1
+}, {
+  "act" : "DEPART",
+  "instant" : 157.6059999999942,
+  "floor" : 1,
+  "nbResident" : 1
+}, {
+  "act" : "ARRIVE",
+  "instant" : 159.01199999999685,
+  "floor" : 2,
+  "nbResident" : 1
+}, {
+  "act" : "DEPART",
+  "instant" : 160.03399999999704,
+  "floor" : 2,
+  "nbResident" : 1
+}, {
+  "act" : "ARRIVE",
+  "instant" : 161.43599999999918,
+  "floor" : 3,
+  "nbResident" : 1
+}, {
+  "act" : "DEPART",
+  "instant" : 162.46599999999933,
+  "floor" : 3,
+  "nbResident" : 1
+}, {
+  "act" : "ARRIVE",
+  "instant" : 163.8680000000029,
+  "floor" : 4,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 164.89800000000304,
+  "floor" : 4,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 166.29800000000537,
+  "floor" : 3,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 167.31600000000537,
+  "floor" : 3,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 168.71600000000836,
+  "floor" : 2,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 169.74600000000854,
+  "floor" : 2,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 171.15600000001172,
+  "floor" : 1,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 172.17200000001182,
+  "floor" : 1,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 173.5740000000152,
+  "floor" : 0,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 174.60400000001528,
+  "floor" : 0,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 176.0040000000176,
+  "floor" : 1,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 177.0040000000177,
+  "floor" : 1,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 178.40400000002037,
+  "floor" : 2,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 179.4120000000204,
+  "floor" : 2,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 180.81400000002333,
+  "floor" : 3,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 181.82800000002337,
+  "floor" : 3,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 183.22800000002576,
+  "floor" : 4,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 184.23400000002584,
+  "floor" : 4,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 185.63400000002875,
+  "floor" : 3,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 186.66200000002885,
+  "floor" : 3,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 188.0820000000316,
+  "floor" : 2,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 189.09600000003172,
+  "floor" : 2,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 190.49600000003483,
+  "floor" : 1,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 191.50800000003497,
+  "floor" : 1,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 192.90800000003608,
+  "floor" : 0,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 193.91200000003622,
+  "floor" : 0,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 195.3120000000393,
+  "floor" : 1,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 196.34400000003941,
+  "floor" : 1,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 197.7440000000421,
+  "floor" : 2,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 198.74800000004223,
+  "floor" : 2,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 200.14800000004524,
+  "floor" : 3,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 201.15600000004537,
+  "floor" : 3,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 202.57400000004853,
+  "floor" : 4,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 203.59400000004862,
+  "floor" : 4,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 205.00000000005164,
+  "floor" : 3,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 206.00200000005168,
+  "floor" : 3,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 207.47000000005465,
+  "floor" : 2,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 208.49000000005472,
+  "floor" : 2,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 209.89400000005566,
+  "floor" : 1,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 210.9080000000557,
+  "floor" : 1,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 212.30800000005604,
+  "floor" : 0,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 213.31800000005595,
+  "floor" : 0,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 214.72000000005679,
+  "floor" : 1,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 215.7340000000569,
+  "floor" : 1,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 217.13400000005828,
+  "floor" : 2,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 218.1400000000583,
+  "floor" : 2,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 219.542000000059,
+  "floor" : 3,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 220.54600000005902,
+  "floor" : 3,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 221.94800000005984,
+  "floor" : 4,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 222.9700000000599,
+  "floor" : 4,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 224.37000000006137,
+  "floor" : 3,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 225.37000000006145,
+  "floor" : 3,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 226.7700000000631,
+  "floor" : 2,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 227.7920000000632,
+  "floor" : 2,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 229.1940000000643,
+  "floor" : 1,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 230.22400000006436,
+  "floor" : 1,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 231.6240000000651,
+  "floor" : 0,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 232.6280000000652,
+  "floor" : 0,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 234.0300000000662,
+  "floor" : 1,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 235.03400000006627,
+  "floor" : 1,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 236.4340000000674,
+  "floor" : 2,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 237.45400000006754,
+  "floor" : 2,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 238.8560000000684,
+  "floor" : 3,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 239.85800000006836,
+  "floor" : 3,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 241.25800000006743,
+  "floor" : 4,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 242.2800000000675,
+  "floor" : 4,
+  "nbResident" : 0
+}, {
+  "act" : "ARRIVE",
+  "instant" : 243.68200000006615,
+  "floor" : 3,
+  "nbResident" : 0
+}, {
+  "act" : "DEPART",
+  "instant" : 244.71000000006617,
+  "floor" : 3,
+  "nbResident" : 0
+} ]

@@ -1,0 +1,41 @@
+{
+  "floorCount" : 5,
+  "floorHeight" : 4.0,
+  "residentCount" : 30,
+  "elevators" : [
+    {
+      "maxContentWeight" : 200.0,
+      "acceleration" : 10.0,
+      "maxSpeed" : 4.0,
+      "stopDuration" : 1.0,
+      "ai" : "metro",
+      "weight" : 300.0,
+      "energyCost" : 10,
+      "alphaEnergyRecovery" : 0.5,
+      "floorPosition" : 0
+    },
+    {
+      "maxContentWeight" : 200.0,
+      "acceleration" : 10.0,
+      "maxSpeed" : 4.0,
+      "stopDuration" : 1.0,
+      "ai" : "metro",
+      "weight" : 300.0,
+      "energyCost" : 10,
+      "alphaEnergyRecovery" : 0.5,
+      "floorPosition" : 2
+    }
+  ],
+  "exitRanges" : [
+    {
+      "start" : 5.0,
+      "end" : 10.0
+    }
+  ],
+  "enterRanges" : [
+    {
+      "start" : 15.0,
+      "end" : 20.0
+    }
+  ]
+}

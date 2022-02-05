@@ -1,0 +1,1093 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>714</x>
+      <y>612</y>
+      <w>222</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Elevator
+--
+-controller: ElevatorController
+-history: ElevatorHistory
+-contentWeight: int
+-maxContentWeight: int
+-residents: ArrayList&lt;Resident&gt;
+-acceleration: double
+-maxSpeed: double
+-stopDuration: double
+-weight: double
+-energyCost: double
+-alphaEnergyRecovery: double
+--
++Elevator(ElevatorJson json): Elevator
++timeTravel(int floorCount); int
++energyUse(double distance, double contentWeight): double
++getResidents(): List&lt;Resident&gt;
++addToHistory(ElevatorAcitonChoice): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>504</x>
+      <y>396</y>
+      <w>168</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Building
+--
+-floors: ArrayList&lt;Floor&gt;
+-floorHeight: double
+-elevators: ArrayList&lt;Elevator&gt;
+--
++Building(BuildingJson json): Building
++getInstance(): static Building
++updateQueues(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>312</x>
+      <y>396</y>
+      <w>162</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>BuildingBuilder
+--
+
+--
++setFloorCount(int): void
++setFloorHeight(double): void
++setResidentCount(int): void
++addEnterRange(Range range): void
++addExitRange(Range range): void
++build(): Building
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>528</x>
+      <y>246</y>
+      <w>78</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Range
+--
+
+--
++start(): int
++end(): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>996</x>
+      <y>612</y>
+      <w>126</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>ElevatorController
+--
+-elevator: Elevator
+-ai: ElevatorAI
+--
++findNextDestination(): void
++estimatePosition(): double
++update(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1122</x>
+      <y>438</y>
+      <w>240</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>ResidentHistory
+--
+-history: ArrayList&lt;ResidentAction&gt;
+--
++add(ResidentActionChoice act, int floor): void
++getLastActions(int count): ArrayList&lt;ResidentAction&gt;
++getActions(): ArrayList&lt;ResidentAction&gt;
++saveAsJson(String path): void
++waitAvg(): double
++waitMax(): double
++travelAvg(): double
++travelMax(): double
++inElevatorAvg(): double
++inElevatorMax(): double
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1176</x>
+      <y>360</y>
+      <w>138</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>ResidentAction
+--
+
+--
++act(): ResidentActionChoice
++floor(): int
++instant(): double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1308</x>
+      <y>354</y>
+      <w>84</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>r1=*
+r2=</panel_attributes>
+    <additional_attributes>10.0;20.0;120.0;20.0;120.0;180.0;90.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>468</x>
+      <y>636</y>
+      <w>204</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>ElevatorHistory
+--
+-elevator: Elevator
+-history: HashMap&lt;double,ElevatorAction&gt;
+--
++add(ElevatorAction action, int floor, int nbResident): void
++getLastActions(int count): List&lt;ElevatorAction&gt;
++getActions(): List&lt;ElevatorACtion&gt;
++saveAsJson(String path): void
++energyUsed(): double
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>930</x>
+      <y>606</y>
+      <w>78</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>r1=1
+r2=1</panel_attributes>
+    <additional_attributes>10.0;20.0;110.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>714</x>
+      <y>408</y>
+      <w>174</w>
+      <h>138</h>
+    </coordinates>
+    <panel_attributes>Floor
+--
+-residents: ArrayList&lt;Resident&gt;
+-queue: ArrayDequeue&lt;Resident&gt;
+-floorPosition: int
+--
++updateQueues(): void
++removeFromQueue(): Resident
++addResident(Resident resident): void
++seeFromQueue(): Resident
++removeFromQueue(): Resident
++residentCount(): int
++residentHomeCount(): int
++getResidentHome(int index): Resident</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>924</x>
+      <y>396</y>
+      <w>150</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Resident
+--
+-residents: static ArrayList&lt;Resident&gt;
+-id: int
+-schedules: TreeSet&lt;Schedule&gt;
+-history: ResidentHistory
+-firstName: String
+-lastName: String
+-weight: double
+-homeFloor: int
+-positionFloor: int
+-destinationFloor: int
+--
++getResidentById(int id): static Resident
++addSchedule(Schedule schedule): void
++isInsideElevator(): boolean
++getNextSchedule(): Schedule
++removeNextSchedule(): Schedule
++move(): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1068</x>
+      <y>432</y>
+      <w>66</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>r1=1
+r2=1</panel_attributes>
+    <additional_attributes>90.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>666</x>
+      <y>630</y>
+      <w>60</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>r1=1
+r2=</panel_attributes>
+    <additional_attributes>10.0;20.0;80.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>666</x>
+      <y>426</y>
+      <w>60</w>
+      <h>204</h>
+    </coordinates>
+    <panel_attributes>r1=1
+r2=1</panel_attributes>
+    <additional_attributes>80.0;320.0;40.0;320.0;40.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>96</x>
+      <y>1176</y>
+      <w>120</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>MainSimulator
+--
+-root: static Pane
+--
++main(): static void
++start(Scene scene): void
++getRoot(): static Pane</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>672</x>
+      <y>1176</y>
+      <w>186</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>SimulatorController
+--
+-butPlay: Button
+-labTimeSpeed: Label
+-butLessSpeed: Button
+-butSaveHistory: Button
+--
++getInstance(): static SimulatorController
++loopAction(): static void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>660</x>
+      <y>894</y>
+      <w>210</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>SimulatorView
+--
+-pixelPerMeter: static double
+-display: Pane
+-bar: SimulatorBarView
+-side: SimulatorSideView
+-elevatorViews: ArrayList&lt;ElevatorView&gt;
+-residentViews: ArrayList&lt;ResidentView&gt;
+-floorViews: ArrayList&lt;Line&gt;
+-floorCounters: ArrayList&lt;Label&gt;
+-timeView: Label
+--
++createInstance(): static void
++getInstance(): static SimulatorView
++update(): void
++displayResidentInfos(Resident): void
++displayElevatorInfos(Elevator): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>552</x>
+      <y>1230</y>
+      <w>90</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>bg=white
+"loopAction" est exécuté en boucle pour faire tourner la simulation.
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>636</x>
+      <y>1236</y>
+      <w>48</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;60.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>282</x>
+      <y>1164</y>
+      <w>192</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>Timer
+--
+
+--
++play(): static void
++pause(): static void
++restart(double timeSpeed): static void
++updateTime(): static void
++isPlaying(): boolean
++getTime(): static double
++getTimeSpeed(): double
++setTimeSpeed(double speed): static void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>960</x>
+      <y>324</y>
+      <w>114</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Schedule
+--
+
+--
++time(): double
++destination(): double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>666</x>
+      <y>402</y>
+      <w>60</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>r1=*</panel_attributes>
+    <additional_attributes>80.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1068</x>
+      <y>318</y>
+      <w>36</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>r1=*
+r2=</panel_attributes>
+    <additional_attributes>10.0;20.0;40.0;20.0;40.0;190.0;10.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>882</x>
+      <y>390</y>
+      <w>54</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>r1=*
+r2=</panel_attributes>
+    <additional_attributes>70.0;20.0;40.0;20.0;40.0;60.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>252</x>
+      <y>660</y>
+      <w>180</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>ElevatorAction
+--
+
+--
++act(): ElevatorActionChoice
++instant(): double
++floor(): int
++nbResident(): int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>426</x>
+      <y>654</y>
+      <w>54</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>r2=*</panel_attributes>
+    <additional_attributes>70.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>966</x>
+      <y>714</y>
+      <w>156</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>AIElevator
+--
+findNextDestination(Elevator): int
+stringToAI(string name): AIElevator</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1188</x>
+      <y>690</y>
+      <w>96</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>AIElevatorMetro
+--
+
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1188</x>
+      <y>738</y>
+      <w>96</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>AIElevatorBus
+--
+
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1188</x>
+      <y>786</y>
+      <w>96</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>AIElevatorBasic
+--
+
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1188</x>
+      <y>642</y>
+      <w>96</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>AIElevatorInsideFirst
+--
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1044</x>
+      <y>690</y>
+      <w>156</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;190.0;60.0;190.0;10.0;240.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1044</x>
+      <y>720</y>
+      <w>156</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;10.0;190.0;40.0;240.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1044</x>
+      <y>720</y>
+      <w>156</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;10.0;190.0;120.0;240.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1044</x>
+      <y>642</y>
+      <w>156</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;140.0;190.0;140.0;190.0;10.0;240.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>966</x>
+      <y>636</y>
+      <w>84</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>r2=1</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0;10.0;150.0;120.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>204</x>
+      <y>390</y>
+      <w>84</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Devenu inutile à cause de l'utilisation des fichiers de configurations json.
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>282</x>
+      <y>390</y>
+      <w>42</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;50.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>102</x>
+      <y>684</y>
+      <w>114</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>ElevatorActionChoice
+--
++DEPART
++ARRIVE
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>678</y>
+      <w>54</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>r1=1
+r2=</panel_attributes>
+    <additional_attributes>10.0;20.0;70.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>444</x>
+      <y>108</y>
+      <w>162</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>ElevatorJson
+--
+-maxContentWeight: double
+-acceleration: double
+-maxSpeed: double
+-stopDuration: double
+-ai: String
+-weight: double
+-energyCost: double
+-alphaEnergyRecovery: double
+-floorPosition: int
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>108</y>
+      <w>162</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>BuildingJson
+--
+-floorCount: int
+-floorHeight: double
+-residentCount: int
+-elevators: ArrayList&lt;ElevatorJson&gt;
+-exitRanges: ArrayList&lt;Range&gt;
+-enterRanges: ArrayList&lt;Range&gt;
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>498</x>
+      <y>30</y>
+      <w>240</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>JsonManager
+--
+
+--
++readJson&lt;T&gt;(String path, Class&lt;T&gt; tClass): static T
++writeJson(String path, Object obj): static void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>222</y>
+      <w>150</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>Names
+--
+-firstNames: ArrayList&lt;String&gt;
+-lastNames: ArrayList&lt;String&gt;
+--
++getInstance(): static Names
++getRandomFirstName(): String
++getRandomLastName(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>420</x>
+      <y>0</y>
+      <w>390</w>
+      <h>324</h>
+    </coordinates>
+    <panel_attributes>Classes de gestion des fichiers de configurations
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1176</x>
+      <y>288</y>
+      <w>108</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>ResidentActionChoice
+--
++PRESENTATION
++EMBARK
++UNLOAD</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1146</x>
+      <y>282</y>
+      <w>42</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>r1=1
+r2=</panel_attributes>
+    <additional_attributes>50.0;20.0;10.0;20.0;10.0;180.0;50.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>522</x>
+      <y>870</y>
+      <w>90</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>SimulatorBarView
+--
+-bar: HBox
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>918</x>
+      <y>942</y>
+      <w>180</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>ItemView
+--
+setPosition(double x, double y): void
+show(Pane pane): void
+remove(): void
+selectHighlight(): void
+deselectHighlight(): void
+setOnMouseClicked(EventHandle): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1122</x>
+      <y>948</y>
+      <w>138</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>/ItemViewAbstract/
+--
+
+--
++stopHighLight(): static void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1080</x>
+      <y>1044</y>
+      <w>108</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>ElevatorView
+--
+-view: Rectangle
+-residentCounter: int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1200</x>
+      <y>1044</y>
+      <w>102</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>ResidentView
+--
+-view: Rectangle
+-color: Color
+-labName: Label
+--
++displayName(): void
++hideName(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1188</x>
+      <y>990</y>
+      <w>78</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;110.0;50.0;110.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1128</x>
+      <y>990</y>
+      <w>78</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>110.0;10.0;110.0;50.0;10.0;50.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1008</x>
+      <y>948</y>
+      <w>126</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>864</x>
+      <y>942</y>
+      <w>150</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;230.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>864</x>
+      <y>942</y>
+      <w>150</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>r2=*</panel_attributes>
+    <additional_attributes>10.0;40.0;60.0;40.0;60.0;20.0;230.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>606</x>
+      <y>864</y>
+      <w>66</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>r2=1</panel_attributes>
+    <additional_attributes>90.0;120.0;50.0;120.0;50.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>444</x>
+      <y>936</y>
+      <w>168</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>SimulatorSideView
+--
+-width: double
+-box: VBox
+-infos: InfosView
+--
++displayResidentInfos(Resident): void
++displayElevatorInfos(Elevator): void
++displayStatsInfos(): void
++update(): void
++getBox(): VBox</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>300</x>
+      <y>966</y>
+      <w>120</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>InfosView
+--
+show(Pane pane): void
+remove(Pane pane): void
+update(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>186</x>
+      <y>972</y>
+      <w>102</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>/InfosViewAbstract/
+--
+-view: VBox
+-btnShowStats: Button
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>1056</y>
+      <w>90</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>ResidentInfosView
+--
+-resident: Resident
+-btnSave: Button
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>192</x>
+      <y>1056</y>
+      <w>90</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>ElevatorInfosView
+--
+-resident: Resident
+-btnSave: Button
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>294</x>
+      <y>1056</y>
+      <w>72</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>StatsView
+--
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>234</x>
+      <y>1020</y>
+      <w>18</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>234</x>
+      <y>1020</y>
+      <w>108</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0;160.0;40.0;160.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>132</x>
+      <y>1020</y>
+      <w>120</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>180.0;10.0;180.0;40.0;10.0;40.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>282</x>
+      <y>972</y>
+      <w>84</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>606</x>
+      <y>930</y>
+      <w>66</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>r2=1</panel_attributes>
+    <additional_attributes>90.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>966</y>
+      <w>96</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>r2=1</panel_attributes>
+    <additional_attributes>140.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>72</x>
+      <y>840</y>
+      <w>1242</w>
+      <h>294</h>
+    </coordinates>
+    <panel_attributes>Views
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
